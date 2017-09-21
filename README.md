@@ -4,7 +4,7 @@ Week 2 project: ATM Simulator
 ## ATM Requirements
 
 Every feature must have corresponding unit tests
-Tests should demonstrate proper behavior, and proper handling of misuse (eg attempts to deposit/transfer/withdraw negative amounts
+Tests should demonstrate proper behavior, and proper handling of misuse (eg. attempts to deposit/transfer/withdraw negative amounts
 
 - User interface: CLI Only
   - Direct Input
@@ -32,7 +32,8 @@ Tests should demonstrate proper behavior, and proper handling of misuse (eg atte
   - Users and accounts remain persistent
   - Opportunity for research
 
-Recommended:
 
-Create a `UserInputHandler` class that manages all input requests to the user; Extend this with a `DummyUserInputHandler` for testing (provide scripted user input using this object)
+Recommended:
+Create a `Console` class that manages console interactions.
+Create a `ConsoleMock` for testing (provide scripted user input using this object).
 
