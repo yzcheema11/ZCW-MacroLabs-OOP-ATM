@@ -1,17 +1,25 @@
-public class Account {
+import java.util.ArrayList;
 
+public class Account {
+    private static ArrayList<Account> account = new ArrayList<Account>();
     public static int accountCounter;
 
     private int acctNumber;
     private String type;
     private double balance;
+    private double deposit;
+    private double withdraw;
+
 
     Account(String type){
         this.acctNumber = Account.accountCounter++;
         this.type = type;
         this.balance = 0;
 
-    };
+    }
+    public double setDeposit(){
+        return deposit;
+    }
 
     public double getBalance() {
         return balance;

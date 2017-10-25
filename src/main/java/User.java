@@ -6,8 +6,13 @@ public class User {
     private String password;
     private ArrayList<Account> accounts;
 
+    public User(String username, String password){}
 
-    public String getUsername(){
+    public void setUsername(String username){
+        this.username = username;
+    }
+
+    public String getUsername(String username) {
         return this.username;
     }
 
