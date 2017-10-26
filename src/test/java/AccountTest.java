@@ -1,34 +1,23 @@
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AccountTest {
-    @Test
-    void setDeposit() {
-    }
+public class AccountTest {
 
     @Test
-    void getBalance() {
+    public void acctNumberTest() {
+        //: Given
+        Account testAcctNumber = new Account("");
+        int expected = 1;
+
+        //: When
+        int actual = testAcctNumber.getAcctNumber();
+
+        //: Then
+        Assert.assertEquals(expected, actual);
     }
 
-    @Test
-    void setBalance() {
-    }
-
-    @Test
-    void getAcctNumber() {
-    }
-
-    @Test
-    void setAcctNumber() {
-    }
-
-    @Test
-    void getType() {
-    }
-
-    @Test
-    void setType() {
-    }
 
 }

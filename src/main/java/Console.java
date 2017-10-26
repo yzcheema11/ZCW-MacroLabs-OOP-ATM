@@ -23,12 +23,13 @@ public class Console {
         String option = sc.nextLine();
 
         if (option.equals("1")) {
-            System.out.println("Please enter your Username below:");
-            String username = sc.next();
+            UserWarehouse.existingUser();
+            Account.mainMenu();
 
         } else if (option.equals("5")) {
             UserFactory.createUser();
             AccountFactory.userCreateAccount();
+            Account.mainMenu();
         } else {
                 System.out.println("Please leave this bank Tariq, you don't qualify for an account here!");
         }

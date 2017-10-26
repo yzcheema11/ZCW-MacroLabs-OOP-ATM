@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Account {
     private static ArrayList<Account> account = new ArrayList<Account>();
@@ -12,11 +13,17 @@ public class Account {
 
 
     Account(String type){
-        this.acctNumber = Account.accountCounter++;
+        this.acctNumber = 1;//Account.accountCounter++;
         this.type = type;
         this.balance = 0;
 
     }
+    public static void mainMenu(){
+        Scanner choice = new Scanner(System.in);
+        System.out.println("Main Menu:\nWhat would you like to do?\n\n1. Deposit\n2. Withdraw");
+
+    }
+
     public double setDeposit(){
         return deposit;
     }
